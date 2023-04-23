@@ -10,9 +10,8 @@ app = Flask(__name__, static_folder='frontend/build', static_url_path='')
 CORS(app)
 
 root = os.getcwd()
-execs = root + "\executables"
-songs = root + "\song_files"
-whisper = execs + "\whisper"
+execs = os.path.join(root, "executables")
+songs = os.path.join(root, "song_files")
 
 #Download and separation of audio
 @app.route("/script", methods=["GET", "POST"])
