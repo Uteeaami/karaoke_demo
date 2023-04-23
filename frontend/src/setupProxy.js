@@ -5,14 +5,14 @@ module.exports = function(app) {
   app.use(
     '/video',
     createProxyMiddleware({
-      target: 'https://karaoke-app-ke.herokuapp.com/',
+      target: 'https://arcane-wave-87002.herokuapp.com/',
       changeOrigin: true,
     })
   );
   app.use(
     '/script',
     createProxyMiddleware({
-      target: 'https://karaoke-app-ke.herokuapp.com/',
+      target: 'https://arcane-wave-87002.herokuapp.com/',
       changeOrigin: true,
     })
   );
